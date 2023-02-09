@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, #44a08d, #093637);
+    height: 100vh;
+}
+
+.otp-card{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px -20px;
+}
+
+.otp-card-inputs{
+    margin: 30px 0;
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(6, auto);
+}
+
+.otp-card-inputs input{
+    width: 60px;
+    height: 70px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.otp-card-inputs input:focus{
+    outline: 2px solid #44a08d;
+    border-color: transparent;
+}
+
+.otp-card button{
+    background-color: #44a08d;
+    border: none;
+    padding: 15px 50px;
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.otp-card button:hover{
+    opacity: 0.8;
+}
+
+
+.otp-card button:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+
+
