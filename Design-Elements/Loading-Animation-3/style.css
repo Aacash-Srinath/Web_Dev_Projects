@@ -1,0 +1,40 @@
+.code-loader {
+    color: #fff;
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: 100px;
+    opacity: 0.8;
+    margin-top: 17%;
+    margin-left: 45%;
+  }
+  
+  .code-loader span {
+    display: inline-block;
+    -webkit-animation: pulse_414 0.4s alternate infinite ease-in-out;
+            animation: pulse_414 0.4s alternate infinite ease-in-out;
+  }
+  
+  .code-loader span:nth-child(odd) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  
+  @-webkit-keyframes pulse_414 {
+    to {
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes pulse_414 {
+    to {
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
+      opacity: 0.5;
+    }
+  }
+
+body{
+    background-color: #000;
+}
