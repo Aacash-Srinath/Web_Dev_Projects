@@ -1,1 +1,117 @@
-css 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body{
+    background: ghostwhite;
+    color: rgb(218, 218, 218);
+    padding-top: 35px;
+    font-family: 'Ubuntu';
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #4b79a1, #283e51);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+#container{
+    margin: 5% auto;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+.box{
+    display: inline-block;
+    border: 5px solid rgb(188, 188, 188);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+span{
+    position: absolute;
+    font-size: 75px;
+    font-family: sans-serif;
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 5px;
+    margin-left: -35px;
+}
+
+.top{
+    border-top: none;
+    border-radius: 5px;
+}
+
+.bottom{
+    border-bottom: none;
+    border-radius: 5px;
+}
+
+.left{
+    border-left: none;
+    border-radius: 5px;
+}
+
+.right{
+    border-right: none;
+    border-radius: 5px;
+}
+
+.alert{
+    height: 75px;
+    width: 125px;
+    display: inline-block;
+    background: #568bb9;
+    position: relative;
+    z-index: 10;
+    margin-top: -50%;
+    border-radius: 20px;
+    box-shadow: 0 0 75px 2px #4d7da8;
+    animation: larger 0.5s;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+    padding: 30px;
+    bottom: 50px;
+    top: 0;
+    font-weight: 600;
+    font-size: medium;
+    color: aliceblue;
+}
+
+button{
+    background: dimgray;
+    border-radius: 2px;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:focus{
+    background: rgb(43, 43, 43);
+}
+
+.activeBox{
+    background: rgb(4, 123, 174);
+    border-radius: 15px;
+}
+
+@keyframes larger{
+    from{
+        height: 75px;
+        width: 125px;
+    }
+
+    to{
+        height: 100px;
+        width: 250px;
+    }
+
+}
